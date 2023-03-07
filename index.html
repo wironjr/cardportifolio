@@ -4,20 +4,99 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
 	<title>Card Portifólio</title>
 </head>
 <body>
-	<div class="bg-image"></div>
-	<div class="bg-text">
-		<h2>Wiron Júnior</h2>
-		<h1 style="font-size:50px">I am John Doe</h1>
-		<p>And I'm a Photographer</p>
+
+<div class="bg-image"></div>
+
+<div class="bg-text shadow text-center" id="inicial">
+	
+		<div class="circulo">
+			<img src="assets/eu.png" width="200">
+		</div>
+
+		<h2><span style="font-size: 0.8rem;">Oi, eu sou</span> <span class="text-primary"><strong>Wiron Júnior!</strong></span></h2>
+		<div id="corpo">Web Developer | Ruby on rails jr</div>
+		
+		<div class="m-auto w-50">
+			<hr>
+		</div>
+
+		<div class="bio m-auto">
+			<p>Traballho atualmente com social mídia e estudo desenvolvimento WEB, focando em Ruby on Rails, SCSS, bootstrap, JS.</p>
+		</div>
+
+		<div class="mb-4 mt-4">
+			<div class="bg-primary rounded p-1" style="font-size: 0.9rem;">
+				jun1n_@live.com | 85 99757.1902
+			</div>
+		</div>
+
+		<div class="mb-3">
+			<a href="#" id="mostrar-div2" class="btn btn-dark" title="Mostra alguns projetos que fiz ou colaborei">Portifólio</a>
+		</div>
+
+		<div class="links-social">
+			<a href="http://www.instagram.com/wironjunior" target=" _blank" class="text-white me-2">
+				<i class="bi bi-instagram"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/wiron-junior-464701260" target=" _blank" class="text-white me-2">
+				<i class="bi bi-linkedin"></i>
+			</a>
+			<a href="https://www.facebook.com/profile.php?id=100003622418754&mibextid=LQQJ4d" target=" _blank" class="text-white me-2">
+				<i class="bi bi-facebook"></i>
+			</a>
+			<a href="https://github.com/wironjr" target=" _blank" class="text-white me-2">
+				<i class="bi bi-github"></i>
+			</a>
+			<a href=" https://wa.me/5585997571902" target=" _blank" class="text-white me-2">
+				<i class="bi bi-whatsapp"></i>
+			</a>
+		</div>
+			
+
+		<!--<h1 style="font-size:0.7rem">
+			ADS - Estácio<span style="font-size: 0.7rem;"> (terceiro semestre)</span><br>
+			Ruby on Rails Júnior<span style="font-size: 0.7rem;"> (estudando)</span><br>
+		</h1>-->
+	
+</div>
+
+<div class="bg-text" id="projetos" style="display: none;">
+	teste
+	<div class="mb-3">
+		<a href="#" id="mostrar-div3" class="btn btn-dark">Voltar</a>
 	</div>
+</div>
+
+<script>
+	$(document).ready(function() {
+  $('#mostrar-div2').click(function() {
+    $('#inicial').slideUp();
+    $('#projetos').delay(600).fadeIn();
+		$( "#projetos" ).load( "teste.html" );
+  });
+  $('#mostrar-div3').click(function() {
+    $('#inicial').delay(500).slideDown();
+    $('#projetos').fadeOut();
+  });
+	});
+</script>
+
 </body>
 
 </html>
+
+
+
+
