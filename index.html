@@ -73,18 +73,14 @@
 </div>
 
 <div class="bg-text" id="projetos" style="display: none;">
-	teste
-	<div class="mb-3">
-		<a href="#" id="mostrar-div3" class="btn btn-dark">Voltar</a>
-	</div>
 </div>
 
 <script>
 	$(document).ready(function() {
   $('#mostrar-div2').click(function() {
-    $('#inicial').slideUp();
-    $('#projetos').delay(600).fadeIn();
-		$( "#projetos" ).load( "teste.html" );
+	$('#inicial').slideUp();
+	$('#projetos').delay(600).fadeIn();
+	$( "#projetos" ).load( "projetos.html" );
   });
   $('#mostrar-div3').click(function() {
     $('#inicial').delay(500).slideDown();

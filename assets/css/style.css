@@ -9,6 +9,10 @@ body, html {
   box-sizing: border-box;
 }
 
+.font-pequena{
+  font-size: 0.8rem !important;
+}
+
 .bg-image{
 	background: hsl(0, 0%, 0%) url("../bg.jpg") no-repeat fixed center !important;
 	height: 100% !important;
