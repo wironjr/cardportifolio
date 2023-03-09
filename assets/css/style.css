@@ -13,6 +13,14 @@ body, html {
   font-size: 0.8rem !important;
 }
 
+#inicial{
+  transition: background-color 1s, color 0.7s;
+}
+
+.corfundo-sol{
+  background-color: rgb(241, 241, 241, 0.8) !important;
+}
+
 .bg-image{
 	background: hsl(0, 0%, 0%) url("../bg.jpg") no-repeat fixed center !important;
 	height: 100% !important;
