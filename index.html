@@ -86,8 +86,12 @@
   $('#mostrar-div2').click(function() {
 	$('#inicial').slideUp();
 	$('#projetos').delay(600).fadeIn();
-	$( "#projetos" ).load( "projetos.html" );
-  });
+	if ($('#range').val() == 0) {
+		$( "#projetos" ).load( "projetos.html" ).addClass('corfundo-sol text-black');
+	}else{
+		$( "#projetos" ).load( "projetos.html" ).removeClass('corfundo-sol text-black');;
+	}});
+	
   $('#mostrar-div3').click(function() {
     $('#inicial').delay(500).slideDown();
     $('#projetos').fadeOut();
