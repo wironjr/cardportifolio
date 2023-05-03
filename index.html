@@ -82,14 +82,14 @@
 </div>
 
 <script>
-	$(document).ready(function() {
+$(document).ready(function() {
   $('#mostrar-div2').click(function() {
 	$('#inicial').slideUp();
 	$('#projetos').delay(600).fadeIn();
 	if ($('#range').val() == 0) {
 		$( "#projetos" ).load( "projetos.html" ).addClass('corfundo-sol text-black');
 	}else{
-		$( "#projetos" ).load( "projetos.html" ).removeClass('corfundo-sol text-black');;
+		$( "#projetos" ).load( "projetos.html" ).removeClass('corfundo-sol text-black');
 	}});
 	
   $('#mostrar-div3').click(function() {
